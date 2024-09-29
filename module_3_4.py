@@ -1,10 +1,29 @@
+def single_root_words(root_word: str, *other_words) -> list[str]:
+    same_words = []
+    for r in root_word.split():
+        for o in other_words:
+            if r.upper() in o.upper() or o.upper() in r.upper():
+                same_words.append(o)
+    return same_words
 
 
 def test():
-    pass
+    result1 = single_root_words('rich', 'richiest', 'orichalcum', 'cheers', 'richies')
+    result2 = single_root_words('Disablement', 'Able', 'Mable', 'Disable', 'Bagel')
+    print(result1)
+    print(result2)
+"""    Вывод на консоль:
+    ['richiest', 'orichalcum', 'richies']
+    ['Able', 'Disable']
+"""
+
 
 def main():
     pass
+
+
+test()
+#main()
 
 
 """
