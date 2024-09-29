@@ -19,11 +19,17 @@ def test():
 
 
 def main():
+    print(single_root_words('word1', 'word0', 'word2', 'word3', 'word4'))
+    print(single_root_words('word', 'word0', 'word2', 'word3', 'word4'))
+    print(single_root_words('word0', 'word0', 'word2', 'word3', 'word4'))
+    print(single_root_words('ord4 ord5', 'word0', 'word2', 'word3', 'word4'))
+    print(single_root_words('d4 d2', 'word0', 'word2', 'word3', 'word4'))
+    print(single_root_words('word1 word8', 'word', 'word2', 'word3', 'word4'))
     pass
 
 
 test()
-#main()
+main()
 
 
 """
